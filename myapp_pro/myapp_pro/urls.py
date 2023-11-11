@@ -21,5 +21,14 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     # path('index/', views.index),
-    path(r'', TemplateView.as_view(template_name='index.html'))
+    path(r'index/', TemplateView.as_view(template_name='index.html')),
+    path('advertising/', admin.site.urls),
+    path('get_edu/',views.get_edu),
+    path('get_pub/',views.get_pub),
+    path('get_award/',views.get_award),
+]
+
+from django.views.generic import RedirectView
+urlpatterns += [
+    path('', RedirectView.as_view(url='/index/')),
 ]
