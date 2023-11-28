@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'JetBrainsMono-Regular'; /* //字体名 */
+    /* src: url('font/MISTRAL.ttf') format('truetype'); /* //引入字体 */
+    src: url-loader('./font/JetBrainsMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* @font-face {
+    font-family: 'jetbrains-monobold';
+    src: url('./font/JetBrainsMono-Bold.ttf');
+  } */
+  /*tlmgr update --all --reinstall-forcibly-removed
+to complete the installation.*/
